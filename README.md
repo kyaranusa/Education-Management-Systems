@@ -14,7 +14,11 @@ OS: Linux, Windows, Machintos, open platform.
 Version 1.0.0: 
 - Totally a cloning of OdooEduERP with 1 improvement at exam module, just a small bug fixing, but it bothered me, this bug was my main reason to start this project, sharing back the work to community
 
-
+Links:
+- OdooEduERP: https://www.odoo.com/apps/modules/12.0/school/
+- Odoo Platform: https://www.odoo.com/
+- Odoo Installer : https://www.getopenerp.com/install-odoo-12-on-ubuntu-18-04/
+- Odoo Installer with single script : https://github.com/Yenthe666/InstallScript
 
 kikik yaranusa
 PT Integra Solusi Utama
