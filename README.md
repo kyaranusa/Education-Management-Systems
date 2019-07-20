@@ -11,8 +11,8 @@ EMS is based on these great works of
 Programming Language: Python
 OS: Linux, Windows, Machintos, open platform.
 
-Version 1.0.0
-- totally a cloning of OdooEduERP with 1 improvement at exam module, just a small bug fixing, but it bothered me, this bug was my main reason to start this project, sharing back the work to community
+Version 1.0.0: 
+- Totally a cloning of OdooEduERP with 1 improvement at exam module, just a small bug fixing, but it bothered me, this bug was my main reason to start this project, sharing back the work to community
 
 
 
