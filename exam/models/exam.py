@@ -4,6 +4,7 @@ from datetime import date, datetime
 from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
 
+import calendar
 
 class StudentStudent(models.Model):
     _inherit = 'student.student'
@@ -103,8 +104,10 @@ class ExtendedTimeTableLine(models.Model):
         for rec in self:
             rec.day_of_week = False
             if rec.exm_date:
-                week_day = datetime.strptime(rec.exm_date, "%Y-%m-%d")
-                rec.day_of_week = week_day.strftime("%A").title()
+                rec.day_of_week=calendar.day_name[rec.exm_date.weekday()]  #'Wednesday'
+                #week_day = datetime.strptime(rec.exm_date, "%Y-%m-%d")
+                #rec.day_of_week = week_day.strftime("%A").title()
+                
 
     @api.multi
     def _check_date(self):
@@ -215,9 +218,10 @@ class ExamExam(models.Model):
                                    'standard_standard_exam_rel', 'standard_id',
                                    'event_id', 'Participant Standards',
                                    help="Select Standard")
-    start_date = fields.Date("Exam Start Date",
+    start_date = fields.Datetime("Exam Start Date",
                              help="Exam will start from this date")
-    end_date = fields.Date("Exam End date", help="Exam will end at this date")
+    end_date = fields.Datetime("Exam End date", help="Exam will end at this date")
+    duration = fields.Float('Exam Duration', help="Exam duration in minutes")
     state = fields.Selection([('draft', 'Draft'),
                               ('running', 'Running'),
                               ('finished', 'Finished'),
@@ -345,7 +349,7 @@ class AdditionalExam(models.Model):
                                       next_by_code('additional.exam'))
     standard_id = fields.Many2one("school.standard", "Standard")
     subject_id = fields.Many2one("subject.subject", "Subject Name")
-    exam_date = fields.Date("Exam Date")
+    exam_date = fields.Datetime("Exam Date")
     maximum_marks = fields.Integer("Maximum Mark",
                                    help="Minimum Marks of exam")
     minimum_marks = fields.Integer("Minimum Mark",
