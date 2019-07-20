@@ -12,4 +12,4 @@ Programming Language: Python
 OS: Linux, Windows, Machintos, open platform.
 
 Version 1.0.0
-- totally a copy of OdooEduERP with 1 improvement at exam module, just a small bug fixing, it bothered me, this bug was my reason to start this project, sharing my work to community
+- totally a cloning of OdooEduERP with 1 improvement at exam module, just a small bug fixing, but it bothered me, this bug was my main reason to start this project, sharing back the work to community
