@@ -13,6 +13,8 @@ OS: Linux, Windows, Machintos, open platform.
 
 Version 1.0.0: 
 - Totally a cloning of OdooEduERP with 1 improvement at exam module, just a small bug fixing, but it bothered me, this bug was my main reason to start this project, sharing back the work to community
+- File "/odoo/custom/addons/OdooEduERP/exam/models/exam.py", line 106, in onchange_date_day
+    week_day = datetime.strptime(rec.exm_date, "%Y-%m-%d"). TypeError: strptime() argument 1 must be str, not datetime.date, FIXED
 
 Links:
 - OdooEduERP: https://www.odoo.com/apps/modules/12.0/school/
