@@ -13,3 +13,8 @@ OS: Linux, Windows, Machintos, open platform.
 
 Version 1.0.0
 - totally a cloning of OdooEduERP with 1 improvement at exam module, just a small bug fixing, but it bothered me, this bug was my main reason to start this project, sharing back the work to community
+
+
+
+kikik yaranusa
+PT Integra Solusi Utama
